@@ -38,7 +38,7 @@ export class Promo extends Entity {
   description?: string;
 
   @property({
-    type: 'date',
+    type: 'string',
     required: true,
   })
   createdAt: string;
@@ -50,7 +50,7 @@ export class Promo extends Entity {
   createdBy: string;
 
   @property({
-    type: 'date',
+    type: 'string',
   })
   updatedAt?: string;
 

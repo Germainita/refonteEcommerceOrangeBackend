@@ -21,7 +21,7 @@ export class Forfait extends Entity {
   description?: string;
 
   @property({
-    type: 'date',
+    type: 'string',
     required: true,
   })
   createdAt: string;
@@ -33,7 +33,7 @@ export class Forfait extends Entity {
   createdBy: string;
 
   @property({
-    type: 'date',
+    type: 'string',
   })
   updatedAt?: string;
 
@@ -41,7 +41,6 @@ export class Forfait extends Entity {
     type: 'string',
   })
   updatedBy?: string;
-
 
   constructor(data?: Partial<Forfait>) {
     super(data);

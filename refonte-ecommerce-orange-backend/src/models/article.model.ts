@@ -81,7 +81,7 @@ export class Article extends Entity {
   idForfait: number;
 
   @property({
-    type: 'date',
+    type: 'string',
     required: true,
   })
   createdAt: string;
@@ -93,7 +93,7 @@ export class Article extends Entity {
   createdBy: string;
 
   @property({
-    type: 'date',
+    type: 'string',
   })
   updatedAt?: string;
 
